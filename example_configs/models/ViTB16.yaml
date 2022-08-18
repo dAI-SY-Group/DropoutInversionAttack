@@ -1,0 +1,7 @@
+name: VisionTransformer
+mlp_hidden_size: 3072
+embedding_patch_size: 16
+transformer_layers: 12
+hidden_size: 768
+attention_heads: 12
+dropout_rate: 0.25

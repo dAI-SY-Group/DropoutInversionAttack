@@ -1,0 +1,32 @@
+name: WellInformedInvertingGradients
+imitate_dropout: true
+train_mode: true
+attacker_train_mode: false
+victim_batchsize: 1
+max_iterations: 20000
+max_trials: 1
+init: randn
+regularization: 0.00001 # TV regularization
+use_grad_signs: true
+clip_dummies: true
+optimizer:
+  name: Adam
+  lr: 0.1
+  beta1: 0.9
+  beta2: 0.999
+  weight_decay: 0
+scheduler:
+  name: ReduceLROnPlateau
+  metric: ReconstructionLoss
+  use_loss: false
+  mode: min
+  factor: 0.1
+  patience: 800
+early_stopping:
+  patience: 4000
+  delta: 0
+  metric: ReconstructionLoss
+  use_loss: false
+  subject_to: min
+  verbose: false
+
