@@ -4,13 +4,13 @@ For a demonstration of our attack follow the DIA_demo jupyter notebook.
 
 The paper including all empirical results can be found on [arXiv](https://arxiv.org/abs/2208.06163)
 
-## Examples
-|        | IG                                      | IG                                      | DIA                                       |
-|:------:|:---------------------------------------:|:---------------------------------------:|:-----------------------------------------:|
-|        | p=0.00                                  | p=0.10                                  | p=0.10                                    |
-|MNIST   | ![mnist_ig_p00](demos/MNIST_IG_p00.gif) | ![mnist_ig_p01](demos/MNIST_IG_p01.gif) | ![mnist_dia_p01](demos/MNIST_DIA_p01.gif) |
-|CIFAR-10| ![cifar10_ig_p00](demos/CIF_IG_p00.gif) | ![cifar10_ig_p01](demos/CIF_IG_p01.gif) | ![cifar10_dia_p01](demos/CIF_DIA_p01.gif) |
-|ImageNet| ![ImageNet_ig_p00](demos/ImageNet_IG_p00.gif) | ![ImageNet_ig_p01](demos/ImageNet_IG_p01.gif) | ![ImageNet_dia_p01](demos/ImageNet_DIA_p01.gif) |
+## Example reconstructions for different attacks, dropout rates and datasets on a ViT [2]
+| | Original| IG [1]                                      | IG [1]                                     | DIA (Ours)                                       |
+|:-:|:------:|:---------------------------------------:|:---------------------------------------:|:-----------------------------------------:|
+|Dropout Rate p| - | p=0.00                                  | p=0.10                                  | p=0.10                                    |
+|MNIST   | ![mnist_original](demos/MNIST_original.png) | ![mnist_ig_p00](demos/MNIST_IG_p00.gif) | ![mnist_ig_p01](demos/MNIST_IG_p01.gif) | ![mnist_dia_p01](demos/MNIST_DIA_p01.gif) |
+|CIFAR-10| ![cifar10_original](demos/CIF_original.png) | ![cifar10_ig_p00](demos/CIF_IG_p00.gif) | ![cifar10_ig_p01](demos/CIF_IG_p01.gif) | ![cifar10_dia_p01](demos/CIF_DIA_p01.gif) |
+|ImageNet| ![ImageNet_original](demos/ImageNet_original.png) | ![ImageNet_ig_p00](demos/ImageNet_IG_p00.gif) | ![ImageNet_ig_p01](demos/ImageNet_IG_p01.gif) | ![ImageNet_dia_p01](demos/ImageNet_DIA_p01.gif) |
 
 ## Please cite as:
 ```
@@ -43,5 +43,5 @@ conda activate DIA
 
 ## Credits:
 We base our implementation on the following repositories:
-+ [GitHub](https://github.com/JonasGeiping/invertinggradients) for the implementation of [IG](https://arxiv.org/abs/2003.14053)
-+ [GitHub](https://github.com/lucidrains/vit-pytorch/blob/main/vit_pytorch/vit.py) for the implementation of the VisionTransformer
++ [1] [GitHub](https://github.com/JonasGeiping/invertinggradients) for the implementation of [IG](https://arxiv.org/abs/2003.14053)
++ [2] [GitHub](https://github.com/lucidrains/vit-pytorch/blob/main/vit_pytorch/vit.py) for the implementation of the VisionTransformer
