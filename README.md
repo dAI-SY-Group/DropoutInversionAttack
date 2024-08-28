@@ -2,7 +2,7 @@
 This repository contains the implementation of our proposed Dropout Inversion Attack (DIA).
 For a demonstration of our attack follow the DIA_demo jupyter notebook.
 
-The paper including all empirical results can be found on [arXiv](https://arxiv.org/abs/2208.06163)
+The paper including all empirical results can be found on [ojs.aaai.org](https://ojs.aaai.org/index.php/AAAI/article/view/26163) and [arXiv](https://arxiv.org/abs/2208.06163)
 
 ## Example reconstructions for different attacks, dropout rates and datasets on a ViT [2]
 | | Original| IG [1]                                      | IG [1]                                     | DIA (Ours)                                       |
@@ -14,13 +14,17 @@ The paper including all empirical results can be found on [arXiv](https://arxiv.
 
 ## Please cite as:
 ```
-@misc{https://doi.org/10.48550/arxiv.2208.06163,
-  doi = {10.48550/ARXIV.2208.06163},  
-  url = {https://arxiv.org/abs/2208.06163},
-  author = {Scheliga, Daniel and Mäder, Patrick and Seeland, Marco},
-  title = {Dropout is NOT All You Need to Prevent Gradient Leakage},
-  publisher = {arXiv},
-  year = {2022}
+@article{scheliga2023dropout,
+  title={Dropout Is NOT All You Need to Prevent Gradient Leakage},
+  volume={37},
+  url={https://ojs.aaai.org/index.php/AAAI/article/view/26163},
+  DOI={10.1609/aaai.v37i8.26163},
+  number={8},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  author={Scheliga, Daniel and Maeder, Patrick and Seeland, Marco},
+  year={2023},
+  month={Jun.},
+  pages={9733-9741}
 }
 ```
 
